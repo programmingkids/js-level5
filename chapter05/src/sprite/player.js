@@ -2,20 +2,9 @@ import Phaser from "phaser";
 
 class Player extends Phaser.Physics.Arcade.Sprite {
     constructor(scene, x, y, image) {
-        // 親クラスを呼び出す
-        super(scene, x, y, image);
-        // シーンをプロパティとして代入
-        this.scene = scene;
-        // 表示サイズの変更
-        this.setDisplaySize(50, 50);
-        // 最初のフレームを0番にする
-        this.setFrame(7);
-        // メソッドの呼び出し
-        this.createAnimation();
-        // 移動速度
-        this.runSpeed = 200;
-        // ジャンプパワー
-        this.jumpPower = 300;
+        
+        
+        
     }
     
     update() {
