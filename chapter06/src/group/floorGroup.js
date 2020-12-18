@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 
-class FloorGroup extends  Phaser.Physics.Arcade.StaticGroup {
+class FloorGroup extends Phaser.Physics.Arcade.StaticGroup {
     constructor(scene) {
         // 親クラスを呼び出す
         super(scene.physics.world, scene);

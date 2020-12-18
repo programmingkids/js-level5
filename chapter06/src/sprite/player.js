@@ -4,28 +4,27 @@ import FireGroup from './../group/fireGroup';
 class Player extends Phaser.Physics.Arcade.Sprite {
     constructor(scene, x, y, image) {
         // 親クラスを呼び出す
-        super(scene, x, y, image);
+        
         // シーンをプロパティとして代入
-        this.scene = scene;
+        
         // 表示サイズの変更
-        this.setDisplaySize(50, 50);
+        
         // 最初のフレームを0番にする
-        this.setFrame(7);
+        
         // メソッドの呼び出し
-        this.createAnimation();
+        
         // 移動速度
-        this.runSpeed = 200;
+        
         // ジャンプパワー
-        this.jumpPower = 300;
+        
         // 移動方向
-        this.direction = 'right';
+        
         // ファイヤーグループの作成
-        this.createFireGroup();
+        
         // スペースキーでファイヤー発射
-        this.scene.input.keyboard.on('keydown-SPACE', function(event) {
-            // ファイヤー発射
-            this.shootFire();
-        }, this);
+        
+        
+        
     }
     
     update() {
@@ -69,12 +68,12 @@ class Player extends Phaser.Physics.Arcade.Sprite {
     
     createFireGroup() {
         // ファイヤーグループの作成
-        this.fireGroup = new FireGroup(this.scene);
+        
     }
     
     shootFire() {
         // ファイヤー作成
-        this.fireGroup.createFire(this);
+        
     }
 }
 
